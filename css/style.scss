@@ -267,3 +267,13 @@ footer {
     margin-bottom: 20px;
   }
 }
+
+@media (max-width: 576px) {
+  footer {
+    ul {
+      li {
+        font-size: 0.8rem;
+      }
+    }
+  }
+}
