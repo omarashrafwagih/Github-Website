@@ -272,7 +272,10 @@ footer {
   footer {
     ul {
       li {
-        font-size: 0.8rem;
+        display: block;
+        padding: 0;
+        width: 120px;
+        margin: auto;
       }
     }
   }

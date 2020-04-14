@@ -292,7 +292,10 @@ footer p {
 
 @media (max-width: 576px) {
   footer ul li {
-    font-size: 0.8rem;
+    display: block;
+    padding: 0;
+    width: 120px;
+    margin: auto;
   }
 }
 /*# sourceMappingURL=style.css.map */
