@@ -1,0 +1,269 @@
+/* ************************************************************************************************** VARIABLES */
+$bg-color: #23292d;
+$link-color: #9f7be1;
+$font-color: #aaaaaa;
+
+/* Extends */
+%transitions-25 {
+  transition: 0.25s all ease-in-out;
+}
+%transitions-4 {
+  transition: 0.4s all ease-in-out;
+}
+
+/* ************************************************************************************************** GLOBAL STYLES */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+::selection {
+  background-color: transparent;
+  color: orangered;
+}
+
+body {
+  width: 100%;
+  overflow-x: hidden;
+  background-image: url(../images/herobg.svg);
+  background-color: $bg-color;
+  background-size: contain;
+  background-repeat: no-repeat;
+  font-family: 'Baloo Tamma 2', cursive;
+  color: white;
+  scroll-behavior: smooth;
+  a {
+    color: $link-color;
+  }
+}
+
+/* **************************************************************************************************  HERO STYLES */
+
+#hero {
+  img {
+    display: block;
+    max-width: 100%;
+    width: 95px;
+    margin: 40px auto 10px;
+  }
+  ul {
+    max-width: 280px;
+    margin: 0 auto;
+    a {
+      @extend %transitions-25;
+      &:hover {
+        text-decoration: none;
+        color: white;
+      }
+      &:nth-child(1) {
+        color: white;
+      }
+      li {
+        display: inline;
+        font-size: 1.1rem;
+        padding: 7px;
+        text-align: center;
+        &:hover {
+          transform: translateX(10px);
+        }
+      }
+    }
+  }
+  h1 {
+    display: block;
+    margin: 20px auto 0;
+    text-align: center;
+    margin-top: 80px;
+    font-size: 3rem;
+  }
+  p {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.3rem;
+    color: $font-color;
+  }
+  .download {
+    display: block;
+    width: 220px;
+    margin: 30px auto 20px;
+    text-align: center;
+    background-image: linear-gradient(to bottom, #8241f9, #4e277b);
+    border-color: #150a27;
+    padding: 0.6em 1.25em;
+    border-radius: 6px;
+    color: white;
+    font-size: 1.4rem;
+    &:hover {
+      text-decoration: none;
+      background-image: linear-gradient(to bottom, #6a36ca, #6a36ca);
+    }
+  }
+  span {
+    display: block;
+    text-align: center;
+    color: $font-color;
+    font-size: 0.9em;
+    a {
+      &:hover {
+        text-decoration: none;
+        color: $font-color;
+      }
+    }
+  }
+}
+
+/* **************************************************************************************************  APP STYLES */
+
+#app {
+  img {
+    display: block;
+    max-width: 65%;
+    margin: 50px auto;
+    box-shadow: 0px 0px 40px -5px black;
+  }
+}
+
+@media (max-width: 768px) {
+  #app {
+    img {
+      max-width: 100%;
+    }
+  }
+}
+
+/* **************************************************************************************************  SECTION ONE, TWO &Three STYLES */
+
+#one,
+#two,
+#three {
+  width: 65%;
+  margin-top: 100px;
+  img {
+    max-width: 70%;
+  }
+  h2 {
+    font-size: 1.2rem;
+    margin-top: 40px;
+  }
+  p {
+    font-size: 1rem;
+    color: $font-color;
+  }
+}
+
+@media (max-width: 1020px) {
+  #one,
+  #two,
+  #three {
+    width: 100%;
+    img {
+      max-width: 80%;
+    }
+    h2 {
+      margin-top: 20px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  #one,
+  #two,
+  #three {
+    width: 100%;
+    img {
+      display: block;
+      margin: auto;
+    }
+    h2 {
+      text-align: center;
+    }
+    p {
+      text-align: center;
+    }
+  }
+}
+
+/* **************************************************************************************************  ICONS STYLES */
+
+#icons {
+  margin-top: 80px;
+  width: 65%;
+  .row {
+    margin-bottom: 40px;
+    img {
+      min-width: 45px;
+      max-height: 45px;
+      background-color: $link-color;
+      border-radius: 10px;
+      padding: 11px;
+    }
+    h3 {
+      margin-top: 10px;
+      font-size: 1rem;
+    }
+    p {
+      font-size: 0.9rem;
+      color: $font-color;
+      margin-bottom: 20px;
+    }
+  }
+  a {
+    @extend %transitions-25;
+    margin-top: 80px;
+    background-color: transparent;
+    border: 1px solid white;
+    padding: 12px 28px;
+    font-size: 1rem;
+    width: 200px;
+    color: white;
+    text-align: center;
+    border-radius: 7px;
+    &:hover {
+      text-decoration: none;
+      background-color: white;
+      color: black;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  #icons {
+    width: 100%;
+  }
+}
+
+/* **************************************************************************************************  DIVIDER STYLES */
+
+#divider {
+  width: 120px;
+  border-bottom: 1px solid $font-color;
+  text-align: center;
+  margin: 100px auto 50px;
+}
+
+/* **************************************************************************************************  ICONS STYLES */
+
+footer {
+  text-align: center;
+  ul {
+    li {
+      @extend %transitions-25;
+      display: inline;
+      font-size: 1rem;
+      padding: 15px;
+      color: $link-color;
+      cursor: pointer;
+      &:hover {
+        color: white;
+      }
+    }
+  }
+  p {
+    color: $font-color;
+    margin-bottom: 20px;
+  }
+}
