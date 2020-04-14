@@ -14,12 +14,19 @@
     <!-- Bootstrap Css -->
     <link rel="stylesheet" href="css/style.css">
     <!-- My Style Css -->
+    <link rel="stylesheet" href="css/animate.min.css">
+    <!-- Animate Css -->
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+
 </head>
 
 <body>
 
     <section class="container" id="hero">
-        <img src="images/logo.svg" alt="Github Logo">
+        <img class="animated wow zoomIn slow" src="images/logo.svg" alt="Github Logo">
         <ul class="list-unstyled">
             <a class="active" href="#">
                 <li>Overview</li>
@@ -31,15 +38,17 @@
                 <li>Help</li>
             </a>
         </ul>
-        <h1>GitHub Desktop</h1>
-        <p>Focus on what matters instead of fighting with Git. Whether you're new to Git or a seasoned user, GitHub
+        <h1 class="wow animated fadeInDown slow">GitHub Desktop</h1>
+        <p class="wow animated fadeInDown slow">Focus on what matters instead of fighting with Git. Whether you're new
+            to Git
+            or a seasoned user, GitHub
             Desktop simplifies your development workflow.</p>
         <a class="download" href="#">Download Now !!</a>
         <span>Download For Linux</span>
         <span>By downloading, you agree to the <a href=""> Open Source Applications Terms.</a> </span>
     </section>
 
-    <section class="container-fluid" id="app">
+    <section class="container-fluid wow animated zoomIn slow" id="app">
         <img src="images/app.png" alt="Github Desktop App">
     </section>
 
@@ -88,19 +97,19 @@
     <section class="container text-center" id="icons">
         <div class="row">
             <div class="col-md-4 col-sm-12">
-                <img src="images/icons/1.svg" alt="First Icon">
+                <img class="wow animated bounceInDown slow" src="images/icons/1.svg" alt="First Icon">
                 <h3>Expanded image diff support</h3>
                 <p>Easily compare changed images. See the before and after, swipe or fade between the two, or look at
                     just the changed parts.</p>
             </div>
             <div class="col-md-4 col-sm-12">
-                <img src="images/icons/2.svg" alt="Second Icon">
+                <img class="wow animated bounceInDown slow" src="images/icons/2.svg" alt="Second Icon">
                 <h3>Extensive editor & shell integrations</h3>
                 <p>Open your favorite editor or shell from the app, or jump back to GitHub Desktop from your shell.
                     GitHub Desktop is your springboard for work.</p>
             </div>
             <div class="col-md-4 col-sm-12">
-                <img src="images/icons/3.svg" alt="Third Icon">
+                <img class="wow animated bounceInDown slow" src="images/icons/3.svg" alt="Third Icon">
                 <h3>Community supported</h3>
                 <p>GitHub Desktop is open source now! Check out our roadmap, contribute, and help us make collaboration
                     even easier.</p>
