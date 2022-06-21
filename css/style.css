@@ -1,6 +1,8 @@
 /* ************************************************************************************************** VARIABLES */
 /* Extends */
-#hero ul a, #icons a, footer ul li {
+#hero ul a,
+#icons a,
+footer ul li {
   -webkit-transition: 0.25s all ease-in-out;
   transition: 0.25s all ease-in-out;
 }
@@ -10,7 +12,7 @@
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 ::-moz-selection {
@@ -30,7 +32,7 @@ body {
   background-color: #23292d;
   background-size: contain;
   background-repeat: no-repeat;
-  font-family: 'Baloo Tamma 2', cursive;
+  font-family: "Baloo Tamma 2", cursive;
   color: white;
   scroll-behavior: smooth;
 }
@@ -70,7 +72,7 @@ body a {
 
 #hero ul a li:hover {
   -webkit-transform: translateX(10px);
-          transform: translateX(10px);
+  transform: translateX(10px);
 }
 
 #hero h1 {
@@ -92,10 +94,16 @@ body a {
 
 #hero .download {
   display: block;
-  width: 220px;
+  width: 222px;
   margin: 30px auto 20px;
   text-align: center;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#8241f9), to(#4e277b));
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#8241f9),
+    to(#4e277b)
+  );
   background-image: linear-gradient(to bottom, #8241f9, #4e277b);
   border-color: #150a27;
   padding: 0.6em 1.25em;
@@ -106,7 +114,13 @@ body a {
 
 #hero .download:hover {
   text-decoration: none;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#6a36ca), to(#6a36ca));
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#6a36ca),
+    to(#6a36ca)
+  );
   background-image: linear-gradient(to bottom, #6a36ca, #6a36ca);
 }
 
@@ -128,7 +142,7 @@ body a {
   max-width: 65%;
   margin: 50px auto;
   -webkit-box-shadow: 0px 0px 40px -5px black;
-          box-shadow: 0px 0px 40px -5px black;
+  box-shadow: 0px 0px 40px -5px black;
 }
 
 @media (max-width: 768px) {
